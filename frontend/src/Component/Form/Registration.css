@@ -1,0 +1,144 @@
+.registration-wrapper {
+  width: 100%;
+}
+.registration-content {
+  padding: 50px 0px;
+  margin: 50px auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.registration-form {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-input,
+.form-select {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.name-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.name-row .form-input {
+  flex: 1;
+}
+
+.city-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.city-row .form-group {
+  flex: 1;
+  min-width: 120px;
+}
+
+.form-check-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-check-group input {
+  transform: scale(1.2);
+}
+
+.submit-button {
+  padding: 12px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .name-row,
+  .city-row {
+    flex-direction: column;
+  }
+}
+
+@keyframes lefttoRigh {
+  0% {
+    transform: translateX(-2px);
+  }
+  10% {
+    transform: translateX(2px);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  30% {
+    transform: translateX(2px);
+  }
+  40% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  60% {
+    transform: translateX(-2px);
+  }
+  70% {
+    transform: translateX(2px);
+  }
+  80% {
+    transform: translateX(-2px);
+  }
+  90% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.lable-red {
+  border: 1px solid red;
+  animation: lefttoRigh 0.5s ease;
+}

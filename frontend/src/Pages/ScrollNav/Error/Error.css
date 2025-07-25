@@ -1,0 +1,39 @@
+.Error-component {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0px;
+  gap: 20px;
+}
+
+.error-font {
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+.error-404 {
+  font-size: 5.5rem;
+  font-weight: 900;
+  color: #1a2a36;
+  margin-bottom: -10px;
+}
+
+.erro-page {
+  font-size: 2.5rem;
+  color: #1a2a36;
+}
+.error-text {
+  width: 42%;
+  text-align: center;
+  font-size: 16px;
+  color: #9b9b9b;
+}
+.error-btn {
+  padding: 18px 48px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
